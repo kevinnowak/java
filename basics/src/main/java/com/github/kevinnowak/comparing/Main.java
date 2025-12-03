@@ -16,22 +16,16 @@ class Main {
         footballTeam.add(player2);
         footballTeam.add(player3);
 
-//        System.out.println("Before sorting: " + footballTeam);
-//        Collections.sort(footballTeam);
-//        System.out.println("After sorting: " + footballTeam);
+        // Sorting by ranking without a Comparator -> uses Player's compareTo()
+        Collections.sort(footballTeam);
 
-//        PlayerRankingComparator playerRankingComparator = new PlayerRankingComparator();
-//        System.out.println("Before sorting: " + footballTeam);
-//        Collections.sort(footballTeam, playerRankingComparator);
-//        System.out.println("After sorting: " + footballTeam);
+        // Sorting by ranking providing an implementation of a Comparator class
+        Collections.sort(footballTeam, new PlayerRankingComparator());
+        Collections.sort(footballTeam, Comparator.comparingInt(Player::getRanking)); // Does the same
 
-//        var playerAgeComparator = new PlayerAgeComparator();
-//        System.out.println("Before sorting: " + footballTeam);
-//        Collections.sort(footballTeam, playerAgeComparator);
-//        System.out.println("After sorting: " + footballTeam);
-
-//        Comparator<Player> byRanking = (Player p1, Player p2) -> Integer.compare(p1.getRanking(), p2.getRanking());
-        Comparator<Player> byRanking = Comparator.comparingInt(Player::getRanking);
-        Comparator<Player> byAge = Comparator.comparingInt(Player::getAge);
+        // Sorting by age providing an implementation of a Comparator class
+        Collections.sort(footballTeam, new PlayerAgeComparator());
+        Collections.sort(footballTeam, Comparator.comparingInt(Player::getAge)); // Does the same
+        Collections.sort(footballTeam, (Player p1, Player p2) -> Integer.compare(p1.getAge(), p2.getAge())); // Does the same
     }
 }
