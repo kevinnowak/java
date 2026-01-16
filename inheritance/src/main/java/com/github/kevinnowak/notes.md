@@ -1,0 +1,1 @@
+* Records and enumerations can implement interfaces, but they cannot extend classes
