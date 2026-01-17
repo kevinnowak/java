@@ -1,0 +1,8 @@
+= Streams
+
+* Streams represent a batch of objects (or base type values) that you encounter either serially or in parallel
+* Streams can be built out of collections, but they are not collections themselves as they don't store data -> it's rather like a processing pipeline
+* Streams are single use -> after a terminal operation they are closed
+* Stream operations can be categorized into
+** Intermediate operations
+** Terminal operations
