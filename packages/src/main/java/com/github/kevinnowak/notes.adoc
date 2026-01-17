@@ -1,0 +1,4 @@
+= Packages
+
+* The package `foo.bar` is logically not part of the package `foo`
+* The `CLASSPATH` defines a set of paths to directories in which classes and packages should be searched
