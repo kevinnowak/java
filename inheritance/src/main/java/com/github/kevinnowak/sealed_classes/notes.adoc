@@ -1,0 +1,18 @@
+= Sealed Classes
+
+* Introduced with Java 17
+* Lets you control which classes can extend your class
+* You basically define a restricted list of allowed subclasses
+* Interfaces and abstract classes can also be declared with `sealed`
+* A sealed class can be declared without a `permits` clause, but then all of its direct subclasses must be declared in the same file
+* Benefits:
+    ** Better control of subtypes
+    ** Exhaustive pattern matching due to compile-time checking -> no `default` needed in `switch` expressions
+    ** Allows accurate modeling of domain constraints
+* Rules:
+    ** Permitted subclasses of a sealed class must be accessible
+    ** Subclasses must be `final`, `sealed` or `non-sealed`
+    ** `final` = no further extension
+    ** `sealed` = continues the restriction
+    ** `non-sealed` = opens it back up for anyone to extend
+
