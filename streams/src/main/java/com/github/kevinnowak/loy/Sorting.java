@@ -1,4 +1,4 @@
-package com.github.kevinnowak;
+package com.github.kevinnowak.loy;
 
 import java.util.Arrays;
 import java.util.Comparator;
