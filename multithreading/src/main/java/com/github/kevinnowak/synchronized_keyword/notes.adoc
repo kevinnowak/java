@@ -1,0 +1,13 @@
+* Primary tool for preventing race conditions
+* Race conditions happen when two threads try to change the same data at the same time
+* Every object has an internal "intrinsic lock" (so-called monitor)
+* Every class has a lock too (`ClassName.class`)
+* When a thread enters a synchronized block, it "takes the key" to that lock
+* Any other thread trying to enter must wait until the first thread drops the key
+* Locking on `this` can be risky if external code also synchronizes on your object -> better use `private final Object lock = new Object();`
+* `synchronized` static methods are one lock for all instances -> blocks across the entire JVM for that class
+* `synchronized` instance methods lock `this` while `synchronized` static methods lock `ClassName.class` -> different locks -> no blocking of each other -> can run at the same time
+* Main use cases of the `synchronized` keyword
+    1. Synchronized Instance Methods
+    2. Synchronized Blocks
+    3. Static Synchronized Methods
