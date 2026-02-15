@@ -7,7 +7,7 @@ public class TemperatureConverter {
 
     /**
      * Converts a temperature from Celsius to Fahrenheit.
-     *
+     * <p>
      * The formula for converting Celsius to Fahrenheit is:
      * F = C * 9/5 + 32
      *
@@ -20,7 +20,7 @@ public class TemperatureConverter {
 
     /**
      * Converts a temperature from Fahrenheit to Celsius.
-     *
+     * <p>
      * The formula for converting Fahrenheit to Celsius is:
      * C = (F - 32) * 5/9
      *

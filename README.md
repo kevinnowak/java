@@ -4,13 +4,12 @@
 
 This repository is organized into several Maven modules, each focusing on a specific Java topic.
 
-*   `pom.xml`: The parent Maven file, defining common configurations and listing all sub-modules.
+*   `pom.xml`: The parent Maven file, defining common configurations and listing all submodules.
 *   `.devcontainer/`: Contains the `devcontainer.json` file for setting up the development container.
 
 ## Modules
 
-Below is a list of the learning modules available in this repository. Each module will have its own `README.md` with detailed explanations and examples.
+Below is a list of the learning modules available in this repository.
 
-*   **[Module Name 1]**: Short description of Module 1.
-*   **[Module Name 2]**: Short description of Module 2.
+*   **Basics**: This module covers basic data types, arithmetic operations, etc.
 *   ... (More modules will be added here)
