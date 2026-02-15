@@ -1,7 +1,0 @@
-= Inner Classes
-
-* Nesting helps to structure our programs and to define scopes for names
-* Static vs. non-static inner classes
-* Things declared `private` in a top-level class can be accessed by inner classes inside that top-level class
-* Inner classes can also access `private` elements declared in other inner classes under the same top-level class scope
-* Use inner classes when the existence of instances of inner classes don't make sense outside the top-level class

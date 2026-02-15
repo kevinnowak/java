@@ -1,2 +1,0 @@
-* By Marc Loy
-* https://learning.oreilly.com/interactive-lab/java-streams-using/9781098103415/
