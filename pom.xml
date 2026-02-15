@@ -11,8 +11,7 @@
 
     <name>Java Learning Repository</name>
     <description>
-        A repository for deepening knowledge of the Java programming language,
-        structured as a multi-module Maven project.
+        A repository for deepening knowledge of the Java programming language.
     </description>
 
     <properties>
@@ -23,13 +22,11 @@
     </properties>
 
     <modules>
-        <module>basics</module>
-        <!-- Modules will be added here as we create them -->
+        <module>data-types</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
-            <!-- JUnit 5 for testing -->
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-engine</artifactId>

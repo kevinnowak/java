@@ -10,12 +10,12 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>basics</artifactId>
+    <artifactId>data-types</artifactId>
     <packaging>jar</packaging>
 
-    <name>Java Basics Module</name>
+    <name>Java Data Types Module</name>
     <description>
-        This module covers fundamental Java programming concepts and basic data types.
+        This module covers basic data types in Java.
     </description>
 
     <dependencies>
