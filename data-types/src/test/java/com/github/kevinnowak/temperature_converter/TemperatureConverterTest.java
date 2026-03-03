@@ -1,4 +1,4 @@
-package com.github.kevinnowak.basics.temperature_converter;
+package com.github.kevinnowak.temperature_converter;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

@@ -5,7 +5,5 @@
 Below is a list of the learning modules available in this repository.
 
 *   **Data Types**
-*   **Variables**
-*   **Type Conversion and Casting**
-*   **Arrays**
+*  **Operators**
 *   ... (More modules will be added here)

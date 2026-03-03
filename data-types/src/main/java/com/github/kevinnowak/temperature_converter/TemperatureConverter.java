@@ -1,4 +1,4 @@
-package com.github.kevinnowak.basics.temperature_converter;
+package com.github.kevinnowak.temperature_converter;
 
 /**
  * A utility class for converting temperatures between Celsius and Fahrenheit.
