@@ -22,6 +22,7 @@
     <modules>
         <module>data-types</module>
         <module>operators</module>
+        <module>inheritance</module>
     </modules>
 
     <dependencyManagement>
