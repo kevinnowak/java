@@ -4,6 +4,8 @@
 
 Below is a list of the learning modules available in this repository.
 
-*  **Data Types**
-*  **Operators**
-*  **Inheritance**
+* **Data Types**
+* **Operators**
+* **Inheritance**
+* **Packages**
+* **Interfaces**
