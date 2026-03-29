@@ -1,4 +1,4 @@
-package com.github.kevinnowak;
+package com.github.kevinnowak.java.java_api_and_standard_library;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.

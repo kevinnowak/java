@@ -1,4 +1,4 @@
-package com.github.kevinnowak.generic_interfaces;
+package com.github.kevinnowak.java.java_language_specification.generic_interfaces;
 
 // Additional Bounds: T must be a Number AND it must implement Comparable
 // Note: You can only have one class in the bound, but multiple interface using '&'

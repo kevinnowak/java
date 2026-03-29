@@ -9,12 +9,13 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.github.kevinnowak.java</groupId>
-    <artifactId>java-language-specification</artifactId>
+    <groupId>com.github.kevinnowak.java.testing</groupId>
+    <artifactId>testing</artifactId>
 
-    <packaging>pom</packaging>
+    <properties>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-    <modules>
-        <module>interfaces</module>
-    </modules>
 </project>

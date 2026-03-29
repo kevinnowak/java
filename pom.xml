@@ -20,6 +20,7 @@
     <modules>
         <module>java-language-specification</module>
         <module>java-api-and-standard-library</module>
+        <module>testing</module>
     </modules>
 
     <dependencyManagement>

@@ -1,4 +1,4 @@
-package com.github.kevinnowak;
+package com.github.kevinnowak.java.java_language_specification.nested_interfaces;
 
 class ClassWithLocalInterface {
 
