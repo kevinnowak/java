@@ -1,4 +1,4 @@
-package com.github.kevinnowak.java.java_language_specification.interfaces.interface_members.constant_fields;
+package com.github.kevinnowak.java.java_language_specification.interfaces.constant_fields;
 
 interface BaseColors {
     // Implicitly public, final, and static
