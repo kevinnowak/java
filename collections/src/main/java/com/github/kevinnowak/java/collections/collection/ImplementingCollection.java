@@ -3,7 +3,7 @@ package com.github.kevinnowak.java.collections.collection;
 import java.util.Collection;
 import java.util.Iterator;
 
-public class MyCollection implements Collection<Integer> {
+public class ImplementingCollection<T> implements Collection<T> {
 
     @Override
     public int size() {
@@ -21,7 +21,7 @@ public class MyCollection implements Collection<Integer> {
     }
 
     @Override
-    public Iterator<Integer> iterator() {
+    public Iterator<T> iterator() {
         return null;
     }
 
@@ -36,7 +36,7 @@ public class MyCollection implements Collection<Integer> {
     }
 
     @Override
-    public boolean add(Integer integer) {
+    public boolean add(T t) {
         return false;
     }
 
@@ -51,7 +51,7 @@ public class MyCollection implements Collection<Integer> {
     }
 
     @Override
-    public boolean addAll(Collection<? extends Integer> c) {
+    public boolean addAll(Collection<? extends T> c) {
         return false;
     }
 
