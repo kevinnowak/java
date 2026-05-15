@@ -2,7 +2,8 @@ package com.github.kevinnowak.java.serialization.message_serialization_example;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+
+import java.io.IOException;
 
 public class JsonCodec implements MessageCodec {
 
@@ -28,6 +29,10 @@ public class JsonCodec implements MessageCodec {
 
     @Override
     public Message decode(byte[] bytes) {
-        return null;
+        try {
+            return objectMapper.readValue(bytes, Message.class);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

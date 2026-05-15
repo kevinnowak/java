@@ -1,13 +1,11 @@
 package com.github.kevinnowak.java.serialization.message_serialization_example;
 
-import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.IntStream;
 
-public class Main {
+public class EncodingTest {
 
     static void main() {
 
@@ -35,11 +33,11 @@ public class Main {
     static List<Message> generateMessages(int count) {
         return IntStream.range(0, count)
                 .mapToObj(_ -> new Message(
-                    UUID.randomUUID(),
-                    Instant.now(),
-                    "Bob",
-                    "Hello, world!",
-                    10))
+                        UUID.randomUUID(),
+                        System.currentTimeMillis(),
+                        "Bob",
+                        "Hello, world!",
+                        10))
                 .toList();
     }
 }

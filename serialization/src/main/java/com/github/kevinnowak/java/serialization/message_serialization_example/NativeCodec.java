@@ -1,8 +1,6 @@
 package com.github.kevinnowak.java.serialization.message_serialization_example;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 public class NativeCodec implements MessageCodec {
 
@@ -25,6 +23,10 @@ public class NativeCodec implements MessageCodec {
 
     @Override
     public Message decode(byte[] bytes) {
-        return null;
+        try (var bais = new ByteArrayInputStream(bytes); var ois = new ObjectInputStream(bais)) {
+            return (Message) ois.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

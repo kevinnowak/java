@@ -1,12 +1,11 @@
 package com.github.kevinnowak.java.serialization.message_serialization_example;
 
 import java.io.Serializable;
-import java.time.Instant;
 import java.util.UUID;
 
-public record Message (
+public record Message(
         UUID id,
-        Instant timestamp,
+        long timestamp,
         String sender,
         String content,
         int priority
