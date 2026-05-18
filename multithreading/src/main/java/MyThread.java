@@ -1,5 +1,3 @@
-package com.github.kevinnowak.java.multithreading;
-
 public class MyThread extends Thread {
 
     private int id;

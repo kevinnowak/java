@@ -1,5 +1,3 @@
-package com.github.kevinnowak.java.multithreading;
-
 import java.util.List;
 import java.util.stream.Stream;
 

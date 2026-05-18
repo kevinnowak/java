@@ -1,6 +1,4 @@
-package com.github.kevinnowak.java.multithreading;
-
-public class   MyRunnable implements Runnable {
+public class MyRunnable implements Runnable {
 
     private int id;
     private Thread thread = new Thread(this);
